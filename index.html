@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SeniorSecure Home Care | Montreal & South Shore</title>
+<meta name="description" content="SeniorSecure Home Care provides compassionate and professional home care services in Montreal and the South Shore. English & French caregivers available.">
+<meta name="keywords" content="home care Montreal, senior home care Montreal, South Shore home care, in-home caregiver Montreal, PSW Montreal, private home care services">
+<link rel="canonical" href="https://www.seniorsecurehomecare.ca/">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html { scroll-behavior: smooth; }
+.rtl { direction: rtl; text-align: right; }
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HomeAndConstructionBusiness",
+ "name": "SeniorSecure Home Care",
+ "telephone": "+15142675274",
+ "email": "Darius.Nikanpour@gmail.com",
+ "areaServed": ["Montreal","South Shore"],
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Montreal",
+   "addressRegion": "QC",
+   "addressCountry": "CA"
+ }
+}
+</script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-[#0b2c4a] text-white p-6 flex justify-between items-center">
+  <div class="text-2xl font-bold flex items-center">
+    <img src="assets/logo.png" alt="SeniorSecure Logo" class="h-10 mr-2">SeniorSecure Home Care
+  </div>
+  <div class="space-x-3">
+    <button onclick="changeLanguage('en')" class="bg-white text-[#0b2c4a] px-4 py-1 rounded">EN</button>
+    <button onclick="changeLanguage('fr')" class="bg-white text-[#0b2c4a] px-4 py-1 rounded">FR</button>
+    <button onclick="changeLanguage('fa')" class="bg-white text-[#0b2c4a] px-4 py-1 rounded">FARSI</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gray-100 text-center py-16">
+  <h1 id="hero-title" class="text-4xl font-bold mb-4">Professional Home Care Services in Montreal & South Shore</h1>
+  <p id="hero-sub" class="text-lg mb-6">Compassionate, safe and refined in-home care.</p>
+  <div class="space-x-4">
+    <a href="tel:+15142675274" class="bg-[#0b2c4a] text-white px-6 py-3 rounded">Call (514) 267-5274</a>
+    <a href="https://wa.me/15142675274" class="bg-green-600 text-white px-6 py-3 rounded">WhatsApp</a>
+  </div>
+</section>
+
+<!-- CARE REQUEST FORM -->
+<section class="py-16 px-6 bg-gray-100">
+  <div class="max-w-4xl mx-auto">
+    <h2 id="request-title" class="text-3xl font-bold mb-10 text-center">Request Home Care Services</h2>
+    <form action="https://formsubmit.co/Darius.Nikanpour@gmail.com" 
+          method="POST" 
+          enctype="multipart/form-data" 
+          class="grid gap-6">
+
+      <input type="text" name="Full Name" placeholder="Full Name" required class="p-3 border rounded">
+      <input type="tel" name="Phone" placeholder="Phone Number" required class="p-3 border rounded">
+      <input type="email" name="Email" placeholder="Email Address" class="p-3 border rounded">
+
+      <select name="Service Location" required class="p-3 border rounded">
+        <option value="">Select Service Location</option>
+        <option>Montreal</option>
+        <option>South Shore</option>
+      </select>
+
+      <select name="Preferred Language" class="p-3 border rounded">
+        <option>English</option>
+        <option>French</option>
+        <option>Farsi</option>
+      </select>
+
+      <!-- Required Time Blocks -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Required Care Time Blocks</h3>
+        <div class="grid md:grid-cols-2 gap-3">
+          <label><input type="checkbox" name="Required Time[]" value="7:30-11:30 AM"> 7:30 to 11:30 AM</label>
+          <label><input type="checkbox" name="Required Time[]" value="11:30-15:30 PM"> 11:30 to 15:30 PM</label>
+          <label><input type="checkbox" name="Required Time[]" value="15:30-19:30 PM"> 15:30 to 19:30 PM</label>
+          <label><input type="checkbox" name="Required Time[]" value="19:30-23:30 PM"> 19:30 to 23:30 PM</label>
+          <label><input type="checkbox" name="Required Time[]" value="23:30-3:30 AM"> 23:30 to 3:30 AM</label>
+          <label><input type="checkbox" name="Required Time[]" value="3:30-7:30 AM"> 3:30 to 7:30 AM</label>
+        </div>
+      </div>
+
+      <!-- Required Days -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Required Days of Care</h3>
+        <div class="grid md:grid-cols-2 gap-3">
+          <label><input type="checkbox" name="Required Days[]" value="Monday"> Monday</label>
+          <label><input type="checkbox" name="Required Days[]" value="Tuesday"> Tuesday</label>
+          <label><input type="checkbox" name="Required Days[]" value="Wednesday"> Wednesday</label>
+          <label><input type="checkbox" name="Required Days[]" value="Thursday"> Thursday</label>
+          <label><input type="checkbox" name="Required Days[]" value="Friday"> Friday</label>
+          <label><input type="checkbox" name="Required Days[]" value="Saturday"> Saturday</label>
+          <label><input type="checkbox" name="Required Days[]" value="Sunday"> Sunday</label>
+        </div>
+      </div>
+
+      <textarea name="Care Needs Description" 
+                placeholder="Please describe the care needs (mobility support, dementia care, post-hospital recovery, companionship, etc.)" 
+                class="p-3 border rounded"></textarea>
+
+      <button type="submit" class="bg-[#0b2c4a] text-white py-3 rounded hover:bg-[#09223a] transition">Submit Care Request</button>
+    </form>
+  </div>
+</section>
+
+<!-- CAREGIVER APPLICATION -->
+<section class="py-16 px-6 max-w-4xl mx-auto">
+  <h2 id="apply-title" class="text-3xl font-bold mb-10 text-center">Caregiver Application</h2>
+
+  <form action="https://formsubmit.co/Darius.Nikanpour@gmail.com" 
+        method="POST" 
+        enctype="multipart/form-data" 
+        class="grid gap-6">
+
+    <input type="text" name="Applicant Name" placeholder="Full Name" required class="p-3 border rounded">
+    <input type="tel" name="Applicant Phone" placeholder="Phone Number" required class="p-3 border rounded">
+    <input type="email" name="Applicant Email" placeholder="Email Address" required class="p-3 border rounded">
+
+    <select name="Home Location" required class="p-3 border rounded">
+      <option value="">Home Location</option>
+      <option>Montreal</option>
+      <option>South Shore</option>
+    </select>
+
+    <!-- Qualifications -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Professional Qualifications</h3>
+      <div class="grid gap-2">
+        <label><input type="checkbox" name="Qualification[]" value="PSW"> PSW – Personal Support Worker (Canada)</label>
+        <label><input type="checkbox" name="Qualification[]" value="Registered Nurse"> Registered Nurse (Canada)</label>
+        <label><input type="checkbox" name="Qualification[]" value="Nurse Equivalency"> Certificate of Nurse Equivalency (Canada)</label>
+        <label><input type="checkbox" name="Qualification[]" value="Other Qualification"> Other Relevant Qualification</label>
+      </div>
+    </div>
+
+    <!-- Availability Times -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Available Time Blocks</h3>
+      <div class="grid md:grid-cols-2 gap-3">
+        <label><input type="checkbox" name="Available Time[]" value="7:30-11:30 AM"> 7:30 to 11:30 AM</label>
+        <label><input type="checkbox" name="Available Time[]" value="11:30-15:30 PM"> 11:30 to 15:30 PM</label>
+        <label><input type="checkbox" name="Available Time[]" value="15:30-19:30 PM"> 15:30 to 19:30 PM</label>
+        <label><input type="checkbox" name="Available Time[]" value="19:30-23:30 PM"> 19:30 to 23:30 PM</label>
+        <label><input type="checkbox" name="Available Time[]" value="23:30-3:30 AM"> 23:30 to 3:30 AM</label>
+        <label><input type="checkbox" name="Available Time[]" value="3:30-7:30 AM"> 3:30 to 7:30 AM</label>
+      </div>
+    </div>
+
+    <!-- Available Days -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Available Days</h3>
+      <div class="grid md:grid-cols-2 gap-3">
+        <label><input type="checkbox" name="Available Days[]" value="Monday"> Monday</label>
+        <label><input type="checkbox" name="Available Days[]" value="Tuesday"> Tuesday</label>
+        <label><input type="checkbox" name="Available Days[]" value="Wednesday"> Wednesday</label>
+        <label><input type="checkbox" name="Available Days[]" value="Thursday"> Thursday</label>
+        <label><input type="checkbox" name="Available Days[]" value="Friday"> Friday</label>
+        <label><input type="checkbox" name="Available Days[]" value="Saturday"> Saturday</label>
+        <label><input type="checkbox" name="Available Days[]" value="Sunday"> Sunday</label>
+      </div>
+    </div>
+
+    <!-- File Uploads -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Upload Documents</h3>
+      <label>Upload CV:</label>
+      <input type="file" name="CV" accept=".pdf,.doc,.docx" class="p-2 border rounded mb-4">
+      <label>Upload Certificates:</label>
+      <input type="file" name="Certificates" accept=".pdf,.jpg,.png" class="p-2 border rounded">
+    </div>
+
+    <!-- Background Confirmation -->
+    <div>
+      <h3 class="font-semibold text-lg mb-3">Background Check Confirmation</h3>
+      <label><input type="checkbox" required> I confirm I can provide a valid Canadian background check.</label>
+      <label><input type="checkbox" required> I confirm all information provided is accurate and truthful.</label>
+    </div>
+
+    <textarea name="Experience" placeholder="Describe your professional experience..." class="p-3 border rounded mt-4"></textarea>
+
+    <button type="submit" class="bg-[#0b2c4a] text-white py-3 rounded hover:bg-[#09223a] transition">
+      Submit Application
+    </button>
+  </form>
+</section>
+
+<!-- MAP -->
+<section class="py-16 text-center">
+  <h2 class="text-3xl font-bold mb-6">Serving Montreal & South Shore</h2>
+  <iframe src="https://www.google.com/maps?q=Montreal,QC&output=embed" width="100%" height="350" style="border:0;" loading="lazy"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0b2c4a] text-white text-center p-6">
+SeniorSecure Home Care | (514) 267-5274 | Darius.Nikanpour@gmail.com
+</footer>
+
+<script>
+function changeLanguage(lang){
+  if(lang==='fa'){
+    document.body.classList.add('rtl');
+    document.getElementById('hero-title').innerText='خدمات حرفه‌ای مراقبت در منزل در مونترال و ساوت شور';
+    document.getElementById('hero-sub').innerText='مراقبت ایمن، دلسوزانه و حرفه‌ای در منزل';
+    document.getElementById('request-title').innerText='درخواست خدمات مراقبت در منزل';
+    document.getElementById('apply-title').innerText='فرم درخواست همکاری مراقب';
+  } else if(lang==='fr'){
+    document.body.classList.remove('rtl');
+    document.getElementById('hero-title').innerText='Services professionnels de soins à domicile à Montréal et Rive-Sud';
+    document.getElementById('hero-sub').innerText='Soins à domicile sécuritaires et compatissants.';
+    document.getElementById('request-title').innerText='Demande de services de soins à domicile';
+    document.getElementById('apply-title').innerText='Candidature de soignant';
+  } else {
+    document.body.classList.remove('rtl');
+    document.getElementById('hero-title').innerText='Professional Home Care Services in Montreal & South Shore';
+    document.getElementById('hero-sub').innerText='Compassionate, safe and refined in-home care.';
+    document.getElementById('request-title').innerText='Request Home Care Services';
+    document.getElementById('apply-title').innerText='Caregiver Application';
+  }
+}
+</script>
+
+</body>
+</html>
